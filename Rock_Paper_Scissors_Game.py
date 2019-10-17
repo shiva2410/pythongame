@@ -89,11 +89,11 @@ def scissors():
 
 def draw(canvas):
     try:
-        if HUMAN_SCORE + COMPUTER_SCORE == 11:
+        if HUMAN_SCORE + COMPUTER_SCORE == 12:
             if HUMAN_SCORE < COMPUTER_SCORE:
-                canvas.draw_text("YOU LOST", [10, 40], 48, "White")
+                canvas.draw_text("LOST", [10, 40], 48, "White")
             else:
-                canvas.draw_text("YOU WON", [10, 40], 48, "White")
+                canvas.draw_text("WON", [10, 40], 48, "White")
         else:
             canvas.draw_text("You: " + human_choice, [10, 40], 48, "Green")
             canvas.draw_text("Comp: " + computer_choice, [10, 80], 48, "Red")
